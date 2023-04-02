@@ -3,7 +3,8 @@ package variableTypes
 import declarations.Employee
 typealias EmployeeSet = Set<Employee>
 fun main() {
-    val number : Int
+    val names = arrayListOf("ui","io","setting")
+    print(names[0])
 }
 class TypeAlias {
     val root = 25
