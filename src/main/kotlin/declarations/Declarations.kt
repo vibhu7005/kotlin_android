@@ -17,19 +17,13 @@ fun main() {
 
 }
 
-class Employee(var name: String, var grade: String, val id: Int) {
+class Employee(var name: String, var grade: String, private val id: Int) {
     override fun equals(other: Any?): Boolean {
         if (other is Employee) {
-            return other.name == name && other.grade == grade && other.id == id
+            return this.name == other.name && this.grade == other.grade &&
+                    this.id == other.id
         }
         return false
-    }
-
-    override fun hashCode(): Int {
-        var result = name.hashCode()
-        result = 31 * result + grade.hashCode()
-        result = 31 * result + id
-        return result
     }
 
     override fun toString(): String {
