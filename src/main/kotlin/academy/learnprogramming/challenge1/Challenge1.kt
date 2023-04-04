@@ -1,15 +1,18 @@
 package academy.learnprogramming.challenge1
 
+import java.util.*
+
 fun main(args: Array<String>) {
-    val hello1 = "Hello"
-    val hello2 = "Hello"
-    //print(hello2 === hello1)
+    val hello1 = "hello"
+    val hello2 = "hello"
+    println(hello2 === hello1)
+    println(hello2 == hello1)
     var num = 2988
-    val str : Any = "The Any type is the root of kotlin class hierarchy"
-    println(str.toString().uppercase())
-    println("""1    1
-        1   11
-        1  111
-        1 1111
-    """.trimMargin("1"))
+    val x: Any = "The Any type is root of kotlin class hierarchy"
+    println((x as String).uppercase())
+    println("""    1
+          |   11
+          |  111
+          | 1111""".trimMargin()
+    )
 }
