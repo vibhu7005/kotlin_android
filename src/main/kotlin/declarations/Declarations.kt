@@ -30,7 +30,6 @@ class Employee(var name: String, var grade: String, private val id: Int) {
         return "Employee(name=$name, grade=$grade, id=$id)"
     }
 
-
 }
 
 

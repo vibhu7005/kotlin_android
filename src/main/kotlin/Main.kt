@@ -8,8 +8,5 @@ fun main(args: Array<String>) {
    println(e1 != e2)
    println(e1 != e3)
    println(e1 !== e2)
-   var x = 34
-   var y = x.toDouble()
-   println(x.javaClass.name)
-   println(y.javaClass.name)
+   println(e1)
 }
